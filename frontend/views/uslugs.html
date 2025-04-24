@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silk Path - Интернет-магазин модной одежды</title>
+    <link rel="stylesheet" href="style/style.css">
+    <header class="header">
+        <div class="header-top">
+            <div class="logo-container">
+                <img src="img/trans_bg 1.svg" alt="Логотип" class="logo">
+                <h1 class="store-name">Одежда - это второе лицо женщины, которое говорит о ней больше, чем первое</h1>
+            </div>
+            <div class="auth-buttons">
+                <button id="showModalBtn" class="login-btn">Войти</button>
+                <button  id="showModalReg" class="register-btn" >Регистрация</button>
+            </div>
+        </div>
+        
+    </header>
+
+</head>
+
+<body>
+    <section class="sticky_nav">
+        <nav class="nav-menu">
+            <a href="index.html" >Главная</a>
+            <a href="products.html" >Продукты</a>
+            <a href="uslugs.html" class="active">Услуги</a>
+            <a href="news.html">Новости</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="about_us.html">О нас</a>
+        </nav>
+    </section>
+    
+    <div class="main-content">
+        
+        <main class="content">           
+            <section class="banner">
+                <h2 class="section-title">Наши услуги</h2>
+                <div class="popular-items">
+                    <div class="product-card">
+                        <img src="img/блуза.jpg" alt="Футболка" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-title">Доставка к дому</h3>
+                            <p class="product-price">1 499 руб.</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/блуза.jpg" alt="Джинсы" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-title">Обмен старой одежды на новой</h3>
+                            <p class="product-price">3 999 руб.</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/блуза.jpg" alt="Платье" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-title">Летнее платье</h3>
+                            <p class="product-price">2 799 руб.</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/блуза.jpg" alt="Куртка" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-title">Демисезонная куртка</h3>
+                            <p class="product-price">5 499 руб.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="img/блуза.jpg" alt="Футболка" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-title">Модная футболка</h3>
+                            <p class="product-price">1 499 руб.</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/блуза.jpg" alt="Джинсы" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-title">Стильные джинсы</h3>
+                            <p class="product-price">3 999 руб.</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/блуза.jpg" alt="Платье" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-title">Летнее платье</h3>
+                            <p class="product-price">2 799 руб.</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/блуза.jpg" alt="Куртка" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-title">Демисезонная куртка</h3>
+                            <p class="product-price">5 499 руб.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section footer-address">
+                <h3 class="footer-title">Наш адрес</h3>
+                <p>г. Ростов-на-Дону, ул. Мира 8, кв 23</p>
+                <p>Часы работы: 10:00 - 21:00</p>
+            </div>
+            
+            <div class="footer-section footer-contacts">
+                <h3 class="footer-title">Контакты</h3>
+                <p>Телефон: +7 (123) 456-78-90</p>
+                <p>Email: sofiya@silk-path.ru</p>
+            </div>
+            
+            <div class="footer-section footer-social">
+                <h3 class="footer-title">Мы в соцсетях</h3>
+                <div class="social-icons">
+                    <a href="#"><i>VK</i></a>
+                    <a href="#"><i>Whatsapp</i></a>
+                    <a href="#"><i>Telegram</i></a>
+                    <a href="#"><i>Rutube</i></a>
+                </div>
+                <p>Подпишитесь на наши новости и акции</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>2025 SilkPath</p>
+        </div>
+    </footer>
+    <div class="modal-overlay" id="modalOverlay" style="display: none;">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Вход</h2>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Логин</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="error-message" id="errorMessage">
+                    Неверный пароль, повторите попытку.
+                </div>
+                <button type="submit" class="login-button">Вход</button>
+            </form>
+        </div>
+    </div>    
+    <script src="script/script.js"></script>
+</body>
+</html>
